@@ -2,45 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>startupbharat | Business Registration & Compliance</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f7f9fc;
+      color: #222;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: #0d6efd;
+      color: white;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-btn {
+      background: white;
+      color: #0d6efd;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #0d6efd, #084298);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 25px;
+      background: #ffc107;
+      color: black;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .problem p {
+      max-width: 700px;
+      margin: 15px auto;
+      color: #555;
+    }
+
+    /* SERVICES */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+
+    /* STEPS */
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .step {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    }
+
+    .step span {
+      display: inline-block;
+      background: #0d6efd;
+      color: white;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    /* CTA */
+    .cta {
+      background: #0d6efd;
+      color: white;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <h1>startupbharat</h1>
-  <p>Your Partner for Business Registration & Compliance in India</p>
-  <a href="license-check.html" class="btn">Check What License You Need</a>
-</header>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">startupbharat</div>
+    <a href="license-check.html" class="nav-btn">Get Started</a>
+  </nav>
 
-<section>
-  <h2>Are you confused about licenses & compliance?</h2>
-  <p>GST, MSME, FSSAI, Startup India, Shop Act – we simplify everything for you.</p>
-</section>
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Start & Run Your Business<br>Without Compliance Stress</h1>
+    <p>We help Indian startups & small businesses with GST, MSME, FSSAI, Startup India & more.</p>
+    <a href="license-check.html" class="btn-primary">Check What License You Need</a>
+  </header>
 
-<section class="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li>✔ Company & Business Registration</li>
-    <li>✔ GST Registration & Returns</li>
-    <li>✔ MSME (Udyam) Registration</li>
-    <li>✔ FSSAI License</li>
-    <li>✔ Startup India Registration</li>
-  </ul>
-</section>
+  <!-- PROBLEM -->
+  <section class="problem">
+    <h2>Confused About Business Licenses?</h2>
+    <p>
+      Many entrepreneurs lose time and money due to unclear compliance rules.
+      startupbharat simplifies registrations so you can focus on growth.
+    </p>
+  </section>
 
-<section>
-  <h2>How It Works</h2>
-  <ol>
-    <li>You submit your details</li>
-    <li>We analyse your requirement</li>
-    <li>Our expert completes the process</li>
-  </ol>
-</section>
+  <!-- SERVICES -->
+  <section>
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="card">
+        <h3>Business Registration</h3>
+        <p>Sole Proprietor, Partnership, LLP & Pvt Ltd</p>
+      </div>
+      <div class="card">
+        <h3>GST Services</h3>
+        <p>GST Registration, Returns & Compliance</p>
+      </div>
+      <div class="card">
+        <h3>MSME (Udyam)</h3>
+        <p>Government recognised MSME registration</p>
+      </div>
+      <div class="card">
+        <h3>FSSAI License</h3>
+        <p>Food business licensing made easy</p>
+      </div>
+      <div class="card">
+        <h3>Startup India</h3>
+        <p>Startup recognition & benefits</p>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 startupbharat. All Rights Reserved.</p>
-</footer>
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2>How It Works</h2>
+    <div class="step-grid">
+      <div class="step">
+        <span>1</span>
+        <p>Submit your business details</p>
+      </div>
+      <div class="step">
+        <span>2</span>
+        <p>We analyse your requirements</p>
+      </div>
+      <div class="step">
+        <span>3</span>
+        <p>Our expert completes the process</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Get Compliance Right From Day One</h2>
+    <a href="license-check.html" class="btn-primary">Start Now</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 startupbharat. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
